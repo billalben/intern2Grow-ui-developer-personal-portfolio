@@ -1,0 +1,49 @@
+:root {
+  --bg-color: hsl(60, 3%, 94%);
+  --text-color: hsl(0, 0%, 19%);
+  --gray-color: hsl(44, 12%, 76%);
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --shadow-1: 0 0 20px 0 hsla(0, 0%, 20%, 0.2);
+
+  --transition: 0.3s;
+
+  --ff-oswald: "Oswald", sans-serif;
+}
+
+/* ---- #RESET ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-oswald);
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
