@@ -35,6 +35,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -171,8 +172,10 @@ body.active {
   gap: 6rem;
 }
 
-.hero-service {
-  place-self: center;
+@media (min-width: 1200px) {
+  .hero-service {
+    place-self: center;
+  }
 }
 
 .hero-service .card-service {
@@ -260,14 +263,31 @@ body.active {
   color: var(--gray-color);
 }
 
+/* #Footer */
+.footer .copyright {
+  text-align: center;
+  padding-block: 1rem;
+  color: var(--gray-color);
+}
+
+.copyright a {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+
 /* #Media Queries */
 @media screen and (max-width: 1200px) {
   .header .navbar .navbar-list {
     gap: 12px;
   }
   .hero-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
+  }
+
+  .hero-content .hero-profile {
+    position: sticky;
+    top: calc(var(--header-height) + 6rem);
   }
 
   .hero-about p {
@@ -355,6 +375,15 @@ body.active {
 
   .hero-title {
     text-align: center;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content .hero-profile {
+    position: unset;
+    top: unset;
   }
 
   .hero-about p {

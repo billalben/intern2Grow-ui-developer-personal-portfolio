@@ -24,3 +24,7 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 // Close navbar when clicking on link
 const navLinks = document.querySelectorAll("[data-nav-link]");
 addEventOnElements(navLinks, "click", toggleNavbar);
+
+// Dynamic year copyright
+const year = new Date().getFullYear();
+document.querySelector(".copyright span").textContent = year;
