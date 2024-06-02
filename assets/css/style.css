@@ -47,3 +47,62 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-inline: 1.6rem;
+}
+
+/* #Header */
+.header {
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow-1);
+  position: relative;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  height: 8rem;
+}
+
+.navbar .navbar-list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar .navbar-link {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  padding-block: 1rem;
+  transition: var(--transition);
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.navbar .navbar-link:is(:hover, :focus, .active) {
+  color: hsl(0, 0%, 0%);
+  opacity: 1;
+}
+
+.header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1200px) {
+  .header .logo {
+    all: unset;
+  }
+}
+
+.header .social-link {
+  display: flex;
+  gap: 16px;
+}
