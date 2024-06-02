@@ -2,7 +2,7 @@
 
 ### Summary of Portfolio Project
 
-[View Demo](https://github.com/billalben)
+[View Demo](https://billalben.github.io/intern2Grow-ui-developer-personal-portfolio/)
 
 [Link Figma Design](https://www.figma.com/design/n2RPnDQSd7yMM8qFh3T1Th/Intern2Grow---UI-Developer---Personal-Portfolio?node-id=1-17&t=S5RDwWTAMhtFF3hH-1)
 
