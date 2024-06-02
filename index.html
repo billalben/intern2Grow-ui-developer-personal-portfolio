@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio2Grow</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favico.svg" type="image/svg+xml">
     <!-- Custom style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Google fonts -->
@@ -16,7 +18,10 @@
     <!-- #Header -->
     <header class="header">
       <div class="container">
-        <nav class="navbar" data-nav="">
+        <button class="menu-btn" data-nav-toggler>
+          <img src="./assets/images/menu-icon.svg" alt="Menu" />
+        </button>
+        <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li>
               <a href="#home" class="navbar-link active" data-nav-link="home">
@@ -48,34 +53,36 @@
               </a>
             </li>
           </ul>
+
+          <div class="social-link">
+            <a href="#" class="social-icon">
+              <img src="./assets/images/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/people/Ahmed-Saber/100092736532709/"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="./assets/images/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#" class="social-icon">
+              <img src="./assets/images/twitter.svg" alt="Twitter" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ahmed0saber"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="./assets/images/linkedin.svg" alt="Linkedin" />
+            </a>
+          </div>
         </nav>
 
         <a href="#" class="logo">
           <img src="./assets/images/logo.svg" alt="Portfolio2Grow" />
         </a>
 
-        <div class="social-link">
-          <a href="#" class="social-icon">
-            <img src="./assets/images/instagram.svg" alt="Instagram" />
-          </a>
-          <a
-            href="https://www.facebook.com/people/Ahmed-Saber/100092736532709/"
-            target="_blank"
-            class="social-icon"
-          >
-            <img src="./assets/images/facebook.svg" alt="Facebook" />
-          </a>
-          <a href="#" class="social-icon">
-            <img src="./assets/images/twitter.svg" alt="Twitter" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ahmed0saber"
-            target="_blank"
-            class="social-icon"
-          >
-            <img src="./assets/images/linkedin.svg" alt="Linkedin" />
-          </a>
-        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
       </div>
     </header>
 
@@ -157,15 +164,17 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a href="#" class="btn btn-primary">Hire Me</a>
                 <div class="about-info">
-                  <div class="experience">
-                    <h3 class="title">9+ Years</h3>
-                    <p class="subtitle">Experience</p>
-                  </div>
-                  <div class="clients">
-                    <h3 class="title">99+</h3>
-                    <p class="subtitle">Clients</p>
+                  <a href="#" class="btn btn-primary">Hire Me</a>
+                  <div class="wrapper">
+                    <div class="experience">
+                      <h3 class="title">9+ Years</h3>
+                      <p class="subtitle">Experience</p>
+                    </div>
+                    <div class="clients">
+                      <h3 class="title">99+</h3>
+                      <p class="subtitle">Clients</p>
+                    </div>
                   </div>
                 </div>
               </div>
